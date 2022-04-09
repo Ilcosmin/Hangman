@@ -1,20 +1,14 @@
 function wordToGuess() {
-	//document.getElementById("sendWord").disabled = true;
 	const word = document.getElementById("inputWord").value;
 	wordToGuessOnLetters(word);
-	
 }
 
 function wordToGuessOnLetters(word) {
-	
 	for (let i = 0; i < word.length; ++i) {
 	  	let button = document.createElement("button");
-		//button.innerHTML = word.charAt(i);
 		button.setAttribute("id", i);
-		
 		document.body.appendChild(button);
 		button.innerHTML = "_";
-
 	}
 	generateLettersButtons(word);
 }
@@ -26,5 +20,4 @@ function generateLettersButtons(word) {
 		button.setAttribute("id", i);
 		document.body.appendChild(button);
 	}
-	clickLetterButton(word);
 }
