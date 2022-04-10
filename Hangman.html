@@ -5,9 +5,15 @@
 </head>
 <body>
 	<h1 align="center">Hangman</h1>
-	<form>
-		<input type="password" id="inputWord" name="word" placeholder="type a word, only lowercase" pattern=[a-z] required>
-		<button type="submit" id="sendWord" name="button" onclick="wordToGuess()">Confirm</button>
+	<form id="form1">
+		<div id="div1">
+			<input type="password" id="inputWord" name="word" placeholder="type a word, only lowercase" pattern=[a-z] required>
+			<button type="submit" id="sendWord" name="button" onclick="wordToGuess()">Confirm</button>
+		</div>
+	</form>
+	<form id="form2"align="right">
+		<div id="div2">
+			<button type="button" id="alphabetButtons" name="alphabetButtons" onclick="generateLettersButtons()">Show</button>
 	</form>
 
 	<script src="Hangman.Js"></script>
