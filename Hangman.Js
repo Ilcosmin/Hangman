@@ -10,14 +10,13 @@ function wordToGuessOnLetters(word) {
 		document.body.appendChild(button);
 		button.innerHTML = "_";
 	}
-	generateLettersButtons(word);
 }
 
-function generateLettersButtons(word) {
+function generateLettersButtons() {
 	for (let i = 97; i <= 122; ++i) {
 	  	let button = document.createElement("button");
-		button.innerHTML = String.fromCharCode(i);
 		button.setAttribute("id", i);
 		document.body.appendChild(button);
+		button.innerHTML = String.fromCharCode(i);
 	}
 }
