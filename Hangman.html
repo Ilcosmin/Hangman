@@ -2,18 +2,39 @@
 <html>
 <head>
 	<title>Hangman</title>
+
+	<link rel="stylesheet" href="Hangman.css">
 </head>
 <body>
 	<h1 align="center">Hangman</h1>
 	<form id="form1">
-		<div id="div1">
-			<input type="password" id="inputWord" name="word" placeholder="type a word, only lowercase" pattern="[a-z]" required>
-			<button type="submit" id="sendWord" name="button" onclick="wordToGuess()">Confirm</button>
-		</div>
+		<fieldset id="f1">
+			<div id="div1">	
+				<input type="password" id="inputWord" name="word" placeholder="type a word, only lowercase" pattern="[a-z]" required>
+				<button type="submit" id="sendWord" name="button" onclick="wordToGuess()">Confirm</button>
+				<label>A player enters a word. The second player chooses the letters to guess the word.</label>
+			</div>
+		</fieldset>
+	</form>	
+	<form id="form2">
+		<fieldset>
+			<div>
+				<canvas id="myCanvas" width="300" height="200" style="border:1px solid #d3d3d3;"></canvas>
+			</div>
+		</fieldset>
 	</form>
-	<form id="form2"align="right">
-		<div id="div2">
-			<button type="button" id="alphabetButtons" name="alphabetButtons" onclick="generateLettersButtons()">Show</button>
+	<form id="form3"align="center">
+		<fieldset id="f2">
+			<div id="div2">
+				<button type="button" id="alphabetButtons" name="alphabetButtons" onclick="generateLettersButtons()">Start game</button>
+			</div>
+			<div align="center">
+				<button onClick="window.location.reload();">Play again</button>
+			</div>
+			<div>
+				<label id="l1" align="center" ></label>
+			</div>
+		</fieldset>
 	</form>
 
 	<script src="Hangman.Js"></script>
