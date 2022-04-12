@@ -73,7 +73,6 @@ function clickLetterButton(word) {
 					message.style.backgroundColor = "red";
 				}
 			}
-
 		};
 	}
 }
