@@ -1,0 +1,31 @@
+body {
+  background-color: #ededed;
+}
+
+button {
+	width: 120px;
+	height: 35px;
+	font-size: 20px
+}
+
+input {
+	width: 300px;
+	height: 35px;
+	font-size: 20px
+}
+
+label {
+    position: sticky;
+    left: 40px;
+    font-size: 20px;
+    
+}
+
+#myCanvas {
+	position: sticky;
+	left: 800px;
+}
+
+#l1 {font-size: 30px; color: red;}
+
+#newParagraph {font-size: 25px; color: blue;}
